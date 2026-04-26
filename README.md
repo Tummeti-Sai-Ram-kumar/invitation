@@ -1,53 +1,112 @@
-# React + TypeScript + Vite
+# Invitation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, interactive invitation website built with React, TypeScript, and Vite. Perfect for weddings, events, or special occasions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Intro Section**: Welcoming introduction with engaging visuals
+- **Countdown Timer**: Live countdown to the event date
+- **Timeline**: Event schedule and itinerary
+- **Venue Information**: Location details with maps and directions
+- **Video Gallery**: Share memorable moments and highlights
+- **Big Day Highlights**: Showcase the main event details
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript
+- Vite
+- ESLint
+- CSS Modules
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js (version 18 or higher)
+- npm or yarn
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd invitation
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Start the development server:
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
+### Building
+
+Build for production:
+```bash
+npm run build
+```
+
+### Deployment
+
+Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
+
+This will build the project and deploy the `dist` folder to GitHub Pages.
+
+### Linting
+
+Run ESLint:
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Intro/          # Introduction section
+│   ├── Countdown/      # Event countdown timer
+│   ├── Timeline/       # Event schedule
+│   ├── Venue/          # Location and venue details
+│   ├── Video/          # Video gallery
+│   └── Bigday/         # Main event highlights
+├── assets/             # Static assets
+├── App.tsx            # Main app component
+└── index.tsx          # App entry point
+```
+
+## Customization
+
+To customize the invitation:
+
+1. Update event details in the respective components
+2. Modify styles in the `.module.css` files
+3. Replace assets in the `public/` and `src/assets/` folders
+4. Adjust the countdown date in the Countdown component
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests and linting
+5. Submit a pull request
+
+## License
+
+This project is private and not licensed for public use.
 import reactDom from 'eslint-plugin-react-dom'
 
 export default defineConfig([

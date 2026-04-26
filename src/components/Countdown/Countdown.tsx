@@ -17,7 +17,7 @@ export const Countdown: FC = (): ReactElement => {
     return () => window.clearInterval(interval);
   }, []);
 
-  const timeDifference = targetTime - currentTime;
+  const timeDifference = (targetTime - currentTime) > 0 ? targetTime - currentTime : 0;
   const daysLeft = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   const hoursLeft = Math.floor(
     (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
