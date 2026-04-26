@@ -1,0 +1,38 @@
+.countdown  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+} 
+
+.countdown__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid rgb(165, 127, 165);
+    border-radius: 10px;
+    background: #E9E1FF;
+}
+
+.countdown__item p:nth-child(1) {
+    font-size: 30px;
+    font-family: 'Oswald', serif;
+}
+
+@media (max-width: 600px) and (orientation: portrait),
+(max-width: 768px) and (orientation: landscape) {
+    .countdown {
+        gap: 20px;
+    }
+    
+    .countdown__item {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .countdown__item p:nth-child(1) {
+        font-size: 20px;
+    }
+}
