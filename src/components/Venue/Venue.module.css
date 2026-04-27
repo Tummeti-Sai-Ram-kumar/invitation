@@ -19,6 +19,7 @@
 .venue__map {
   width: 40%;
   aspect-ratio: 1 / 0.5;
+  border: none;
 }
 
 .venue__button {

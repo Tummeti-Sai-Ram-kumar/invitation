@@ -15,10 +15,16 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-.video__player {
-  width: 50%;
+.video__player,
+.video__image {
+  width: 40%;
+}
+
+.video__image {
+  display: none;
 }
 
 @media (max-width: 600px) and (orientation: portrait),
@@ -37,8 +43,14 @@
     gap: 10px;
   }
 
-  .video__player {
+  .video__player,
+  .video__image {
     width: 100%;
   }
 }
 
+@media (max-width: 600px) and (orientation: portrait) {
+  .video__image {
+    display: block;
+  }
+}

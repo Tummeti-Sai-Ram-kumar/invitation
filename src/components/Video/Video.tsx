@@ -2,14 +2,18 @@ import type { FC, ReactElement } from "react";
 
 import videoSource1 from "../../assets/video1.mp4";
 import videoSource2 from "../../assets/video2.mp4";
+import imageSource1 from "../../assets/image1.jpeg";
+import imageSource2 from "../../assets/image2.jpeg";
 
 import styles from "./Video.module.css";
 
 export const Video: FC = (): ReactElement => {
   return (
     <div className={styles.video}>
-      <p className={styles.video__title}>Video Gallery</p>
+      <p className={styles.video__title}>Gallery</p>
       <div className={styles.video__container}>
+        <img src={imageSource1} className={styles.video__image} />
+        <img src={imageSource2} className={styles.video__image} />
         <video controls className={styles.video__player}>
           <source src={videoSource1} type="video/mp4" />
         </video>
