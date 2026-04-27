@@ -40,7 +40,7 @@ export const Countdown: FC = (): ReactElement => {
         <p>Minutes</p>
       </div>
       <div className={styles.countdown__item}>
-        <p>{secondsLeft.toString().padStart(2, "0")}</p>
+        <p className={styles.countdown__second}>{secondsLeft.toString().padStart(2, "0")}</p>
         <p>Seconds</p>
       </div>
     </div>
