@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap');
+    .logo { 
+      font-family: 'Pinyon Script', cursive; 
+      font-size: 80px; 
+      fill: #000000; 
+    }
+  </style>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="logo">sk</text>
+</svg>
