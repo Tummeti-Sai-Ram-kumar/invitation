@@ -81,7 +81,8 @@ src/
 │   ├── Timeline/       # Event schedule
 │   ├── Venue/          # Location and venue details
 │   ├── Video/          # Video gallery
-│   └── Bigday/         # Main event highlights
+│   ├── Bigday/         # Main event highlights
+│   └── Dev/            # Development / project credits
 ├── assets/             # Static assets
 ├── App.tsx            # Main app component
 └── index.tsx          # App entry point

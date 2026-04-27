@@ -1,0 +1,22 @@
+.dev {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+
+.dev__content {
+  font-size: 16px;
+  color: rgb(165, 127, 165);
+}
+
+@media (max-width: 600px) and (orientation: portrait),
+(max-width: 768px) and (orientation: landscape) {
+  .dev {
+    margin: 20px auto;
+  }
+
+  .dev__content {
+    font-size: 12px;
+  }
+}
