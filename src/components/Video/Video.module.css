@@ -21,6 +21,7 @@
 .video__player,
 .video__image {
   width: 40%;
+  border: 1px solid rgb(165, 127, 165);
 }
 
 .video__image {

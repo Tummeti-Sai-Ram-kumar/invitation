@@ -3,7 +3,7 @@ import type { FC, ReactElement } from "react";
 const svgStyle = {
   height: "24px",
   position: "absolute",
-  marginTop: "-4px",
+  marginTop: "-3px",
   right: "5px",
 } as const;
 
