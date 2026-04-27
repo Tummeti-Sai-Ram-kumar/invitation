@@ -1,39 +1,38 @@
 .intro {
-    width: 90%;
-    margin: 20px auto; 
-    text-align: center;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
 }
 
 .intro p:nth-child(1) {
-    font-size: 30px;
-    color: rgb(165, 127, 165);
+  font-size: 30px;
+  color: rgb(165, 127, 165);
 }
 
 .intro p:nth-child(2) {
-    padding-top: 20px;
-    font-size: 20px;
+  padding-top: 20px;
+  font-size: 20px;
 }
 
 .intro p:nth-child(3) {
-    padding-top: 20px;
-    font-size: 60px;
-    font-family: "Pinyon Script", cursive;
+  padding-top: 20px;
+  font-size: 60px;
+  font-family: "Pinyon Script", cursive;
 }
 
 @media (max-width: 600px) and (orientation: portrait),
-(max-width: 768px) and (orientation: landscape) {
-    .intro p:nth-child(1) {
+  (max-width: 768px) and (orientation: landscape) {
+  .intro p:nth-child(1) {
     font-size: 20px;
-    
-}
+  }
 
-.intro p:nth-child(2) {
+  .intro p:nth-child(2) {
     padding-top: 20px;
     font-size: 16px;
-}
+  }
 
-.intro p:nth-child(3) {
+  .intro p:nth-child(3) {
     padding-top: 10px;
     font-size: 40px;
-}
+  }
 }

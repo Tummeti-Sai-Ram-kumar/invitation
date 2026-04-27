@@ -1,70 +1,68 @@
 .venue {
-    width: 90%;
-    margin: 60px auto;
-    text-align: center;
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
 }
 
 .venue__title {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: rgb(165, 127, 165);
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgb(165, 127, 165);
 }
 
 .venue__details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .venue__map {
-    width: 40%;
-    aspect-ratio: 1 / 0.5;
+  width: 40%;
+  aspect-ratio: 1 / 0.5;
 }
 
 .venue__button {
-    position: relative;
-    padding: 10px 40px 10px 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 10px;
-    background: rgb(165, 127, 165);
-    cursor: pointer;
+  position: relative;
+  padding: 10px 40px 10px 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background: rgb(165, 127, 165);
+  cursor: pointer;
 }
 
 @media (max-width: 600px) and (orientation: portrait),
-(max-width: 768px) and (orientation: landscape) { 
-    .venue {
-        margin: 20px auto;
-    }
+  (max-width: 768px) and (orientation: landscape) {
+  .venue {
+    margin: 20px auto;
+  }
 
-    .venue__title {
+  .venue__title {
     font-size: 20px;
     margin-bottom: 10px;
-}
+  }
 
-.venue__details {
+  .venue__details {
     flex-direction: column;
     gap: 20px;
-}
+  }
 
-.venue__map {
+  .venue__map {
     width: 100%;
     aspect-ratio: 1 / 1;
-}
+  }
 
-.venue__button {
+  .venue__button {
     width: 60%;
     padding: 10px 20px 10px 10px;
     margin-top: 10px;
     border-radius: 5px;
+  }
 }
 
-}
-
-
-@media (max-width: 768px) and (orientation: landscape) { 
-    .venue__map {
-        width: 100%;
-        aspect-ratio: 1 / 0.5;
-    }
+@media (max-width: 768px) and (orientation: landscape) {
+  .venue__map {
+    width: 100%;
+    aspect-ratio: 1 / 0.5;
+  }
 }

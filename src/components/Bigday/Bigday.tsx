@@ -4,7 +4,6 @@ import { Countdown } from "../Countdown/Countdown";
 
 import styles from "./Bigday.module.css";
 
-
 export const Bigday: FC = (): ReactElement => {
   return (
     <section className={styles.bigday}>

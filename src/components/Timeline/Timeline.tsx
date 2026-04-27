@@ -13,16 +13,14 @@ export const Timeline: FC = (): ReactElement => {
     <div className={styles.timeline}>
       <p className={styles.timeline__title}>Events</p>
       <section className={styles.timeline__events}>
-        {EVENTS_TIMELINE.map(({ event, date, time }, index) => {
-          return (
-            <div key={index} className={styles.timeline__event}>
-              <p>{event}</p>
-              <p>
-                {date} {time}
-              </p>
-            </div>
-          );
-        })}
+        {EVENTS_TIMELINE.map(({ event, date, time }, index) => (
+          <div key={index} className={styles.timeline__event}>
+            <p>{event}</p>
+            <p>
+              {date} {time}
+            </p>
+          </div>
+        ))}
       </section>
     </div>
   );

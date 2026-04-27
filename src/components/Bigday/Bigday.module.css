@@ -1,65 +1,64 @@
 .bigday {
-    width: 90%;
-    margin: 60px auto;
-    gap: 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin: 60px auto;
+  gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .bigday__details {
-    width: 100%;
-    display: grid;
-    grid-template-areas: 'date muhurtham'
-                         'venue venue';
-    gap: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "date muhurtham" "venue venue";
+  gap: 20px;
 }
 
 .bigday__details div {
-    border: 1px solid rgb(165, 127, 165);
-    background: #E9E1FF;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+  border: 1px solid rgb(165, 127, 165);
+  background: #e9e1ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .bigday__date {
-    grid-area: date;
+  grid-area: date;
 }
 
 .bigday__muhurtham {
-    grid-area: muhurtham;
+  grid-area: muhurtham;
 }
 
 .bigday__venue {
-    grid-area: venue;
+  grid-area: venue;
 }
 
 .bigday__date p:nth-child(1),
 .bigday__muhurtham p:nth-child(1),
 .bigday__venue p:nth-child(1) {
-    font-size: 30px;
-    font-family: 'Oswald', serif;
+  font-size: 30px;
+  font-family: "Oswald", serif;
 }
 
 @media (max-width: 600px) and (orientation: portrait),
-(max-width: 768px) and (orientation: landscape) {
-    .bigday {
-        margin: 20px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
+  (max-width: 768px) and (orientation: landscape) {
+  .bigday {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
 
-    .bigday__date p:nth-child(1),
-.bigday__muhurtham p:nth-child(1),
-.bigday__venue p:nth-child(1) {
+  .bigday__date p:nth-child(1),
+  .bigday__muhurtham p:nth-child(1),
+  .bigday__venue p:nth-child(1) {
     font-size: 20px;
-}
+  }
 
-.bigday__details div {
+  .bigday__details div {
     padding: 10px;
     border-radius: 5px;
-}
+  }
 }
